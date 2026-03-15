@@ -1,6 +1,10 @@
 # KAP COPD
 
-Repository for the COPD voice biomarker KAP project.
+This repository contains the code, processed tables, saved results, and final paper for my KAP project on computational voice biomarkers for COPD.
+
+The project tests whether Danish speech contains enough acoustic information to distinguish speakers with COPD from controls. It compares phrase-based, passage-vowel, and sustained-vowel pipelines using eGeMAPS acoustic features and classical machine learning.
+
+The paper submitted with this project is included in this repository.
 
 ## Included
 
@@ -11,6 +15,7 @@ Repository for the COPD voice biomarker KAP project.
 - QC tables and compact paper tables
 - Autrainer phrase-baseline data, config, and helper scripts
 - original pipeline files kept under `legacy/original_pipeline/`
+- final paper for the KAP submission
 
 ## Repo layout
 
@@ -24,6 +29,7 @@ Repository for the COPD voice biomarker KAP project.
 - `src/kap_copd/` shared code
 - `scripts/` command-line entry points
 - `legacy/original_pipeline/` original working files
+- paper file included in the repository root or paper folder, depending on the final submission structure
 
 ## Main result files
 
@@ -67,7 +73,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-You can still use `PYTHONPATH=src` instead of `pip install -e .`, but the editable install is cleaner for running the scripts directly.
+You can still use `PYTHONPATH=src` instead of `pip install -e .`, but the editable install is the cleaner option for running the scripts directly.
 
 ## Commands
 
@@ -125,8 +131,9 @@ python scripts/check_repo.py
 
 ## Notes
 
-- The committed processed tables are the working dataset for the repository.
+- The committed processed tables are the working dataset for this repository.
 - Raw audio is not included.
 - The sustained-vowel branch is separate from the passage-vowel branch.
-- `results/classical_ml/run_20260118_185627/` is a saved evaluation artifact.
+- `results/classical_ml/run_20260118_185627/` is a saved evaluation artifact kept for the paper submission.
 - The Autrainer preparation script can rebuild the fold directories from raw audio if needed.
+- The final paper is included in this repository as part of the KAP submission.
