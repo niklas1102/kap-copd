@@ -1,0 +1,30 @@
+id: COPD-PhraseSegments
+_target_: autrainer.datasets.BaseClassificationDataset
+
+path: data/COPD_PhraseSegments/fold_01
+features_subdir: default
+index_column: path
+target_column: label
+
+file_type: wav
+file_handler:
+  autrainer.datasets.utils.AudioFileHandler:
+    target_sample_rate: 16000
+
+criterion: autrainer.criterions.BalancedCrossEntropyLoss
+metrics:
+  - autrainer.metrics.Accuracy
+  - autrainer.metrics.UAR
+tracking_metric: autrainer.metrics.UAR
+
+transform:
+  type: raw
+  base:
+    - autrainer.transforms.StereoToMono
+    - autrainer.transforms.Expand:
+        size: 80000
+        axis: -1
+  train:
+    - autrainer.transforms.RandomCrop:
+        size: 80000
+        axis: -1

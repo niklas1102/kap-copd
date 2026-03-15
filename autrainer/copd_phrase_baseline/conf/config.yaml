@@ -1,0 +1,18 @@
+defaults:
+  - _autrainer_
+  - _self_
+
+results_dir: results
+experiment_id: copd_phrase_fold01
+iterations: 8
+device: cpu
+
+hydra:
+  sweeper:
+    params:
+      +seed: 1
+      +batch_size: 8
+      +learning_rate: 0.0001
+      dataset: COPD-PhraseSegments
+      model: COPD-W2V2-Base-T
+      optimizer: Adam

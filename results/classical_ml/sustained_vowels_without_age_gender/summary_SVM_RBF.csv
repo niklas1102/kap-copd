@@ -1,0 +1,2 @@
+model,seg_acc_mean,seg_acc_std,seg_auc_mean,seg_auc_std,speaker_acc_mean,speaker_acc_std,speaker_auc_mean,speaker_auc_std,n_segments_total,n_speakers_avg
+SVM_RBF,0.6689080940039844,0.08475611406772784,0.7210303592895932,0.1222245370926383,0.7038095238095238,0.10871335752476965,0.7662698412698413,0.16734085108973432,366,14.8

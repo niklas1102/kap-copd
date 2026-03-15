@@ -1,0 +1,8 @@
+table,rows,speakers
+speaker_labels,78,78
+phrases,1620,81
+phrase_features_with_labels,1560,78
+vowels,17605,81
+vowel_features_with_labels,12327,78
+sustained_vowel_inventory,455,92
+sustained_vowel_features_with_labels,365,74

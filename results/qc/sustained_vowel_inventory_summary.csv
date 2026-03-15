@@ -1,0 +1,13 @@
+metric,value
+n_rows,455
+n_speakers,92
+mean_duration_sec,1.484882123076923
+median_duration_sec,1.074313
+n_ae,90
+n_u,69
+n_oe,90
+n_o,110
+n_e,89
+other_labels,a
+labeled_speakers_with_audio,74
+labeled_speakers_missing_audio,4

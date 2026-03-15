@@ -1,0 +1,2 @@
+model,seg_acc_mean,seg_acc_std,seg_auc_mean,seg_auc_std,speaker_acc_mean,speaker_acc_std,speaker_auc_mean,speaker_auc_std,n_segments_total,n_speakers_avg
+LogReg,0.6582644170589377,0.0824919210611348,0.6724716453177465,0.1511365642844307,0.6771428571428572,0.11578383173660294,0.7364417989417988,0.16567559325497017,366,14.8

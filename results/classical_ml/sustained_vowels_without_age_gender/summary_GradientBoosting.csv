@@ -1,0 +1,2 @@
+model,seg_acc_mean,seg_acc_std,seg_auc_mean,seg_auc_std,speaker_acc_mean,speaker_acc_std,speaker_auc_mean,speaker_auc_std,n_segments_total,n_speakers_avg
+GradientBoosting,0.6717549408508312,0.06933253435102195,0.7072344916825082,0.10814652730104485,0.6628571428571429,0.09124982527240749,0.8006613756613756,0.09912209826376521,366,14.8

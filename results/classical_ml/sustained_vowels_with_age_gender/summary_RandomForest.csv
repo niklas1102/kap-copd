@@ -1,0 +1,2 @@
+model,seg_acc_mean,seg_acc_std,seg_auc_mean,seg_auc_std,speaker_acc_mean,speaker_acc_std,speaker_auc_mean,speaker_auc_std,n_segments_total,n_speakers_avg
+RandomForest,0.6861487632446537,0.10313778608284489,0.7521308709530324,0.14292809193944733,0.7304761904761905,0.14760368583664282,0.7932539682539683,0.19626516371296357,366,14.8
